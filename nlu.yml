@@ -1,0 +1,150 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: reserve_table
+  examples: |
+    - reserve a table
+    - table reserve
+    - reserve table
+    - I want to make a reservation
+
+- intent: seats
+  examples: |
+    - 2 Seats
+    - 2
+
+- intent: section
+  examples: |
+    - AC
+    - Non-AC
+    - ac
+    - non ac
+
+- intent: time
+  examples: |
+    - 7pm
+    - 5pm
+    - 7 pm
+    - 5 pm
+
+- intent: time_and_reserve
+  examples: |
+    - I want to make 2 reservations for 7 pm.
+    - I want to make 2 reservations for 7:30 pm.
+    - I want to make 2 reservations for 8 pm.
+    - I want to make 2 reservations for 8:30 pm.
+    - I want to make 2 reservations for 9 pm.
+    - I want to make 3 reservations for 7 pm.
+    - I want to make 3 reservations for 7:30 pm.
+    - I want to make 3 reservations for 8 pm.
+    - I want to make 3 reservations for 8:30 pm.
+    - I want to make 3 reservations for 9 pm.
+    - I want to make 4 reservations for 7 pm.
+    - I want to make 4 reservations for 7:30 pm.
+    - I want to make 4 reservations for 8 pm.
+    - I want to make 4 reservations for 8:30 pm.
+    - I want to make 4 reservations for 9 pm.

@@ -1,0 +1,71 @@
+version: "2.0"
+
+intents:
+  - greet
+  - reserve_table
+  - seats
+  - section
+  - time
+  - goodbye
+  - mood_great
+  - mood_unhappy
+  - time_and_reserve
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_cheer_up:
+  - text: "Cheer Up!!"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_timenreser:
+  - text: "Your reservation has been made."
+
+  utter_number_seats:
+  - text: "How many seats would you like to reserve?"
+
+  utter_section:
+  - text: "Enter section."
+    buttons:
+    - title: "AC"
+      payload: "/section"
+    - title: "Non AC"
+      payload: "/section"
+
+  utter_time:
+  - text: "When would you like to book a reservation?"
+
+  utter_end:
+  - text: "Your reservation has been made."
+
+  utter_goodbye:
+  - text: "Bye. Have a great day!"
+
+action:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_timenreser
+- utter_number_seats
+- utter_section
+- utter_time
+- utter_end
+- utter_goodbye
+
+actions:
+  - action_time
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
